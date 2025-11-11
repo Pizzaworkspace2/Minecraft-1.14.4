@@ -12,7 +12,6 @@
 		<meta property="og:description" content="Play minecraft 1.14.4 in your browser" />
 		<meta property="og:image" content="favicon.png" />
 		<link type="image/png" rel="shortcut icon" href="favicon.png" />
-		<script type="text/javascript" src="classes.js"></script>
 		<script type="text/javascript" src="fix-webm-duration.js"></script>
 		<script type="text/javascript">
 			window.addEventListener("load", () => {
@@ -38,6 +37,13 @@
 	</head>
 	<body style="margin:0px;width:100vw;height:100vh;overflow:hidden;" id="game_frame">
 	</body>
+	<script>
+            setTimeout(function() {
+                document.getElementById('loading-screen').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+        }, 10000); 
+        </script>
 </html>
+
 
 
